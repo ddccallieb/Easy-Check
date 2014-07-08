@@ -135,7 +135,7 @@ var checkboxTree = function(){
       }
     });
         
-    $parentEl.on('mouseleave', '.list-group-item', function(ev){
+    $parentEl.on('mouseleave', '.list-group-item', function(){
       var li = $(this);
       li.find('>.add-new').hide();
       li.parents('.list-group-item:first').find('>.add-new').show();
