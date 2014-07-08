@@ -1,8 +1,12 @@
 var checkboxTree = function(){
   
   var getCheckboxState= function($cb) {
-    if ($cb.prop('indeterminate')) return 2;
-    if ($cb.prop('checked')) return 1;
+    if ($cb.prop('indeterminate')) {
+      return 2;
+    }
+    if ($cb.prop('checked')) {
+      return 1;
+    }
     return 0;	
   };
   
